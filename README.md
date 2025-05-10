@@ -17,6 +17,7 @@ srsRAN을 기반으로 한 srsUE를 사용한 srsRAN gNB
 - `srsRAN_Project/` - gNB 관련 설정 및 실행 코드
 - `srsRAN_4G/` - UE 관련 설정
 - `uhd/` - SDR 드라이버 구성 파일
+- `results/` -실습 결과 파일 저장
 
 -----
 
