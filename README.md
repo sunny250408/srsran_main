@@ -22,4 +22,27 @@ srsRAN을 기반으로 한 srsUE를 사용한 srsRAN gNB
 
 ## 실행방법
 
+##용어설명
+-라우팅 구성 : 호스트 머신에서 UE로 가는 경로를 수동으로 추가해주는 것 -> 호스트 머신에서 UE IP로 ping을 보내는 경로 생성
+
+
+##결과파일
+
+- [`results/routing_result_clean.txt`](./results/routing_result_clean.txt)  
+→ `ip addr`, `ip route`, `route -n` 등을 실행한 결과를 `script` 명령어로 저장한 클린 로그입니다.
+
+-----
+
+##사용한 명령어
+-라우팅 관련
+```bash
+#내 컴퓨터의 네트워크 인터페이스 확인
+ip addr
+
+#라우팅 경로 추가
+sudo ip route add 10.45.0.0/16 via 10.45.0.1
+
+#라우팅 테이블 출력
+route -n
+
 
