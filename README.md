@@ -5,10 +5,10 @@ srsRAN을 기반으로 한 srsUE를 사용한 srsRAN gNB
 -----
 
 ## 환경 정보
--OS : Ubuntu 22.04
--srsRAN: v22.10
--Core : Open5GS
--연결 방식 : ZMQ(소프트웨어 기반 연결)
+- OS : Ubuntu 22.04
+- srsRAN: v22.10
+- Core : Open5GS
+- 연결 방식 : ZMQ(소프트웨어 기반 연결)
 
 -----
 
