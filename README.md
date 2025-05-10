@@ -51,6 +51,7 @@ route -n
 #UE ↔ Core (특히 UPF) 간의 IP 통신이 정상적으로 가능하도록 경로를 설정
 #[Host PC] → (라우팅 경로) → [Core (UPF)] → [UE (10.45.x.x)] 이런식으로 연결
 
+```
 -ping 관련
 ```bash
 #cd ~/srsRAN_main/srsRAN_4G/build/srsue/src에서 실행
