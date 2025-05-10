@@ -28,26 +28,12 @@ srsRAN을 기반으로 한 srsUE를 사용한 srsRAN gNB
 -라우팅 구성 : 호스트가 Core Network (UPF)를 통해 UE에 접근할 수 있도록 라우팅 테이블을 수정하는 것
 -ping :  네트워크에서 상대방 IP 주소가 응답 가능한지 확인하는 것
 
-## 결과파일
+## 결과 파일 
 
-## 📂 결과 파일 설명
-
-| 파일 경로 | 내용 요약 |
-|-----------|-----------|
-| `results/routing_result.txt` | `ip addr`, `ip route`, `route -n` 명령어를 실행한 결과를 `>` 리다이렉션으로 저장한 라우팅 정보 로그입니다. |
-| `results/ping_result.txt` | 아래 명령어들을 순차적으로 실행한 후 `ping` 결과를 저장한 로그입니다. |
-| &nbsp; | 1. `sudo ip netns add ue1` |
-| &nbsp; | 2. `sudo ./gnb -c ./gnb_zmq.yaml` |
-| &nbsp; | 3. `sudo ./srsue ue_zmq.conf` |
-| &nbsp; | 4. `ping 10.45.0.3 -c 5 > results/ping_result.txt` |
-
----
-
-## 📝 로그 저장 방식
-
-모든 결과 파일은 `>` 리다이렉션을 이용하여 해당 명령의 출력을 `.txt`로 저장한 것입니다.  
-필요 시 `script` 명령을 활용한 전체 터미널 기록 저장도 가능합니다.
-
+| 파일 경로 | 
+|-----------|
+| `results/routing_result.txt` |
+| `results/ping_result.txt` |
 
 
 -----
