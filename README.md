@@ -24,9 +24,11 @@ srsRAN을 기반으로 한 srsUE를 사용한 srsRAN gNB
 ## 실행방법
 
 ## 용어설명
-[UE] ⇄ [gNB] ⇄ [Core Network (UPF, AMF 등)] ⇄ [외부망 or 서버]
--라우팅 구성 : 호스트가 Core Network (UPF)를 통해 UE에 접근할 수 있도록 라우팅 테이블을 수정하는 것
--ping :  네트워크에서 상대방 IP 주소가 응답 가능한지 확인하는 것
+`[UE] ⇄ [gNB] ⇄ [Core Network (UPF, AMF 등)] ⇄ [외부망 or 서버]`
+| 용어 | 용어 설명 |
+|------|-----------|
+| 라우팅 구성 | 호스트가 Core Network (UPF)를 통해 UE에 접근할 수 있도록 라우팅 테이블을 수정하는 것 |
+| ping |  네트워크에서 상대방 IP 주소가 응답 가능한지 확인하는 것 |
 
 ## 결과 파일 
 
