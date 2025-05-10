@@ -22,6 +22,7 @@ srsRAN을 기반으로 한 srsUE를 사용한 srsRAN gNB
 -----
 
 ## 실행방법
+----
 
 ## 용어설명
 `[UE] ⇄ [gNB] ⇄ [Core Network (UPF, AMF 등)] ⇄ [외부망 or 서버]`
@@ -34,8 +35,8 @@ srsRAN을 기반으로 한 srsUE를 사용한 srsRAN gNB
 
 | 파일 경로 | 
 |-----------|
-| `results/routing_result.txt` |
-| `results/ping_result.txt` |
+| [`results/routing_result.txt`](results/routing_result.txt)|
+| [`results/ping_result.txt`](results/ping_result.txt) |
 
 
 -----
@@ -56,6 +57,8 @@ route -n
 #'UE ↔ Core' (특히 UPF) 간의 IP 통신이 정상적으로 가능하도록 경로를 설정
 #'[Host PC] → (라우팅 경로) → [Core (UPF)] → [UE (10.45.x.x)]'이런식으로 연결
 
+route -n > ~/srsRAN_main/results/routing_result.txt
+
 ```
 -ping 관련
 ```bash
@@ -73,6 +76,9 @@ sudo ./srsue ue_zmq.conf
 
 #'[UE] ⇄ [gNB] ⇄ [Open5GS Core Network]'
 #gnb가 open5gs에 연결되고 ue가 gnb와 연결되었음을 확인 할 수 있
+
+#ping결과 저장
+ping 10.45.0.3 -c 5 > ~/srsRAN_main/results/ping_result.txt 
 ```
 
 
