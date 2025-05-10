@@ -70,7 +70,7 @@ sudo ip netns add ue1
 #빌드된 가상 gNB를 실행. ZMQ 기반 가상 무선 링크를 통해 Core Network와 연결
 sudo ./gnb -c./gnb_zmq.yaml
 
-#cd ~/srsRAN_main/srsRAN_4G/build/srsue/sr
+#cd ~/srsRAN_main/srsRAN_4G/build/srsue/src
 #가상 UE 실행. gNB와 연결된 후 Core Network에서 IP를 할당받음.
 sudo ./srsue ue_zmq.conf
 
