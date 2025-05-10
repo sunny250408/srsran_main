@@ -30,8 +30,10 @@ srsRAN을 기반으로 한 srsUE를 사용한 srsRAN gNB
 
 ## 결과파일
 
-- [`results/routing_result.txt`](./results/routing_result.txt)  
+- `results/routing_result.txt`  
 → `ip addr`, `ip route`, `route -n` 등을 실행한 결과를 `>` 명령어로 저장한 로그입니다.
+- `results/ping_result.txt'
+→  `sudo ip netns add ue1`, `sudo ./gnb -c./gnb_zmq.yaml`, `sudo ./srsue ue_zmq.conf`을 실행한 결과를 `>`명령어로 저장한 로그입니다.
 
 -----
 
@@ -68,6 +70,6 @@ sudo ./srsue ue_zmq.conf
 
 #[UE] ⇄ [gNB] ⇄ [Open5GS Core Network]
 #gnb가 open5gs에 연결되고 ue가 gnb와 연결되었음을 확인 할 수 있
-
+```
 
 
