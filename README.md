@@ -4,7 +4,7 @@ srsRAN을 기반으로 한 srsUE를 사용한 srsRAN gNB
 
 -----
 
-##환경 정보
+## 환경 정보
 -OS : Ubuntu 22.04
 -srsRAN: v22.10
 -Core : Open5GS
@@ -12,7 +12,7 @@ srsRAN을 기반으로 한 srsUE를 사용한 srsRAN gNB
 
 -----
 
-##폴더 구성
+## 폴더 구성
 - `libzmq/` - ZMQ 라이브러리
 - `srsRAN_Project/` - gNB 관련 설정 및 실행 코드
 - `srsRAN_4G/` - UE 관련 설정
@@ -26,14 +26,14 @@ srsRAN을 기반으로 한 srsUE를 사용한 srsRAN gNB
 -라우팅 구성 : 호스트 머신에서 UE로 가는 경로를 수동으로 추가해주는 것 -> 호스트 머신에서 UE IP로 ping을 보내는 경로 생성
 
 
-##결과파일
+## 결과파일
 
 - [`results/routing_result_clean.txt`](./results/routing_result_clean.txt)  
 → `ip addr`, `ip route`, `route -n` 등을 실행한 결과를 `script` 명령어로 저장한 클린 로그입니다.
 
 -----
 
-##사용한 명령어
+## 사용한 명령어
 -라우팅 관련
 ```bash
 #내 컴퓨터의 네트워크 인터페이스 확인
