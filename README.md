@@ -42,7 +42,7 @@ srsRAN을 기반으로 한 srsUE를 사용한 srsRAN gNB
 -----
 
 ## 사용한 명령어
--라우팅 관련
+-라우팅 구성
 ```bash
 #cd /ect/open5gs안에서 실행
 #내 컴퓨터의 네트워크 인터페이스 확인
@@ -60,7 +60,7 @@ route -n
 route -n > ~/srsRAN_main/results/routing_result.txt
 
 ```
--ping 관련
+-ping 출력
 ```bash
 #cd ~/srsRAN_main/srsRAN_4G/build/srsue/src에서 실행
 # 'ue1'이라는 가상의 네트워크 공간(netns)을 생성. srsUE는 이 공간 안에서 동작함.
