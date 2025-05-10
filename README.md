@@ -53,8 +53,8 @@ sudo ip route add 10.45.0.0/16 via 10.45.0.1
 #라우팅 테이블 출력
 route -n
 
-#UE ↔ Core (특히 UPF) 간의 IP 통신이 정상적으로 가능하도록 경로를 설정
-#[Host PC] → (라우팅 경로) → [Core (UPF)] → [UE (10.45.x.x)] 이런식으로 연결
+#`UE ↔ Core` (특히 UPF) 간의 IP 통신이 정상적으로 가능하도록 경로를 설정
+#`[Host PC] → (라우팅 경로) → [Core (UPF)] → [UE (10.45.x.x)]`이런식으로 연결
 
 ```
 -ping 관련
@@ -71,7 +71,7 @@ sudo ./gnb -c./gnb_zmq.yaml
 #가상 UE 실행. gNB와 연결된 후 Core Network에서 IP를 할당받음.
 sudo ./srsue ue_zmq.conf
 
-#[UE] ⇄ [gNB] ⇄ [Open5GS Core Network]
+#`[UE] ⇄ [gNB] ⇄ [Open5GS Core Network]`
 #gnb가 open5gs에 연결되고 ue가 gnb와 연결되었음을 확인 할 수 있
 ```
 
